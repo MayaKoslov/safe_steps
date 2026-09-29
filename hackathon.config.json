@@ -1,0 +1,18 @@
+{
+  "projectName": "safe_steps",
+  "teamName": "team-bawana99",
+  "tagline": "Safe steps-because every woman deserves to move through her city with confidence",
+  "teamMembers": [
+    "Mariyam",
+    "Ananya",
+    "Pranavi",
+    "Navya"
+  ],
+  "problemStatement": "AI powered neighborhood safety scorecard for women's commuting",
+  "frontend": "Next.js 14",
+  "backend": "None (Frontend only)",
+  "database": "MongoDB",
+  "authentication": "JWT",
+  "addons": [],
+  "installDeps": true
+}

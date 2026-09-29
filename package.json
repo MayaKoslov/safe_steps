@@ -1,0 +1,23 @@
+{
+  "name": "safe_steps",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Official Hackathon Starter Template",
+  "workspaces": [
+    "client"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev --workspace=client",
+    "build:client": "npm run build --workspace=client"
+  },
+  "keywords": [
+    "hackathon",
+    "starter",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "react-leaflet": "^5.0.0"
+  }
+}

@@ -1,0 +1,115 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Theme Palette - Safe Steps Branding */
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --bg-light: #f8fafc;
+  --text-dark: #0f172a;
+  
+  /* Risk Zone Indicators */
+  --safe-green: #10b981;
+  --warning-yellow: #f59e0b;
+  --danger-red: #ef4444;
+
+  color-scheme: light dark;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark Mode Overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-light: #0f172a;
+    --text-dark: #f8fafc;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #0f172a;
+  }
+}
+
+/* Global Reset for Full Viewport Map Layout */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#app, #__next {
+  width: 100%;
+  height: 100%;
+}
+
+/* Presentation UI Cards & Components */
+.starter-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.tagline {
+  color: #64748b;
+  font-size: 0.875rem;
+  margin-top: -0.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Live Demo Presentation Badges */
+.badge-demo {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+/* Risk Zone Scoring Styles */
+.score-green {
+  color: var(--safe-green);
+  font-weight: 800;
+}
+
+.score-yellow {
+  color: var(--warning-yellow);
+  font-weight: 800;
+}
+
+.score-red {
+  color: var(--danger-red);
+  font-weight: 800;
+}
+
+.guidelines-box {
+  margin-top: 1rem;
+  padding: 0.875rem;
+  border-radius: 8px;
+  background: rgba(234, 179, 8, 0.1);
+  border: 1px solid rgba(234, 179, 8, 0.3);
+  font-size: 0.85rem;
+  color: #b45309;
+}
+
+@media (prefers-color-scheme: dark) {
+  .guidelines-box {
+    color: #fef08a;
+  }
+  .starter-card {
+    background: rgba(15, 23, 42, 0.85);
+  }
+}
